@@ -1,6 +1,3 @@
-cf-api-url:
-cf-username:
-cf-password:
-cf-org:
-github-repository:
-github-private-key:
+aws-access-key-id: <YOUR_ACCESS_KEY>
+aws-secret-access-key: <YOUR_SECRET_KEY>
+aws-bucket: <YOUR_AWS_S3_BUCKET>
