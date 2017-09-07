@@ -18,8 +18,8 @@ run:
   args:
   - -exc
   - |
-    chmod +x ./gradlew
-    function stop_mysql {
+
+      function stop_mysql {
       service mysql stop
     }
     trap stop_mysql EXIT
@@ -36,6 +36,7 @@ run:
     service mysql start
 
     cd pal-tracker
+    chmod +x ./gradlew
 
     mysql -uroot < databases/tracker/create_databases.sql
     ./gradlew -P version=$(cat ../version/number) testMigrate build
