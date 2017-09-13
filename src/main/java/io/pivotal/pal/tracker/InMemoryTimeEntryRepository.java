@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class InMemoryTimeEntryRepository implements TimeEntryRepository {
+/**
+ * Created by baveerap on 9/6/2017.
+ */
+public class InMemoryTimeEntryRepository implements TimeEntryRepository{
     private HashMap<Long, TimeEntry> timeEntries = new HashMap<>();
 
     @Override

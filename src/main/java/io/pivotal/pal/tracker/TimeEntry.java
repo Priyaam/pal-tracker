@@ -1,5 +1,8 @@
 package io.pivotal.pal.tracker;
 
+/**
+ * Created by baveerap on 9/6/2017.
+ */
 public class TimeEntry {
     private long id;
     private long projectId;

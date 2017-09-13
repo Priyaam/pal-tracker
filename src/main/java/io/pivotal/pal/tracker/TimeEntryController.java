@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Created by baveerap on 9/6/2017.
+ */
 @RestController
 @RequestMapping("/time-entries")
 public class TimeEntryController {
+
 
     private final CounterService counter;
     private final GaugeService gauge;
@@ -25,7 +29,6 @@ public class TimeEntryController {
         this.counter = counter;
         this.gauge = gauge;
     }
-
     @PostMapping
     public ResponseEntity<TimeEntry> create(@RequestBody TimeEntry timeEntry) {
         TimeEntry createdTimeEntry = timeEntriesRepo.create(timeEntry);

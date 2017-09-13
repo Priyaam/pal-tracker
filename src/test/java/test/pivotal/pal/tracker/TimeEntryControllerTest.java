@@ -23,18 +23,15 @@ import static org.mockito.Mockito.verify;
 public class TimeEntryControllerTest {
     private TimeEntryRepository timeEntryRepository;
     private TimeEntryController controller;
-    private  GaugeService guage;
-    private CounterService counter;
+    private CounterService counterService;
+    private GaugeService gaugeService;
 
     @Before
     public void setUp() throws Exception {
         timeEntryRepository = mock(TimeEntryRepository.class);
-        guage = mock(GaugeService.class);
-        counter = mock(CounterService.class);
-        controller = new TimeEntryController(timeEntryRepository,counter,guage);
-
-
-
+        counterService = mock(CounterService.class);
+        gaugeService = mock(GaugeService.class);
+        controller = new TimeEntryController(timeEntryRepository, counterService, gaugeService);
     }
 
     @Test

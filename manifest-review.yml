@@ -2,8 +2,6 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-  host: pal-tracker-review-priyaam
+  host: ps-pal-tracker-review-Balaji
   services:
   - tracker-database
-  env:
-    SECURITY_FORCE_HTTPS: true
